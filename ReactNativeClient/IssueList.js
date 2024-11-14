@@ -23,7 +23,7 @@ function jsonDateReviver(key, value) {
 async function graphQLFetch(query, variables = {}) {
   try {
     /****** Q4: Start Coding here. State the correct IP/port******/
-    const response = await fetch('http://192.168.10.122:3000/graphql', {
+    const response = await fetch('http://127.0.0.1:3000/graphql', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ query, variables })
